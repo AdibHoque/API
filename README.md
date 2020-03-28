@@ -17,8 +17,8 @@ bot = commands.Bot(prefix='prefix')
 async def on_ready()
     print('Online')
     
-@bot.command(ctx)
-async def motivation():
+@bot.command(pass_context=True)
+async def motivation(ctx):
     number = random.radiant(1, 106)
     imgurl = 'https://raw.githubusercontent.com/AdibHoque/API/master/Motivation/%20+number'+'.jpg'
     embed = discord.Embed(title = 'Motivation', color = 0xFFBF00)
