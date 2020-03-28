@@ -25,6 +25,6 @@ async def motivation():
     embed.set_image(url = imgurl) 
     await bot.say(embed)
     
-bot.login('token') 
+bot.run('token') 
 ```
 ## discord.js
