@@ -31,6 +31,8 @@ bot.run('token')
 ```
 const {Client , Util , RichEmbed, MessageAttachment, avatarURL} = require('discord.js'); 
 const client = new Client({ disableEveryone: true }); 
+const random = require('random')
+const PREFIX = 'prefix'
 
 client.on('error', console.error);
 
