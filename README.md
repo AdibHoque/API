@@ -47,8 +47,8 @@ client.on('message', async msg => { // eslint-disable-line
 	if (!msg.content.startsWith(PREFIX)) return undefined;
 	const arg = msg.content.split(' ');
 	const args = arg.slice(1).join(' ');
-    let message = msg
-    const everyone = message.guild.roles.find(r => r.name === "@everyone"); 
+        let message = msg
+        const everyone = message.guild.roles.find(r => r.name === "@everyone"); 
 	let command = msg.content.toLowerCase().split(' ')[0];
 	command = command.slice(PREFIX.length)
 
