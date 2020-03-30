@@ -59,6 +59,7 @@ client.on('message', async msg => { // eslint-disable-line
   const embed = new RichEmbed()
   .setTitle('Motivation') 
   .setImage(imgurl)
+  .setFooter('GitHub.com/AdibHoque/API')
   msg.channel.send(embed);
  };
  
