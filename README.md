@@ -5,7 +5,7 @@ If you want to use this simple api for your discord bot, generate a number betwe
 
 # EXAMPLEs
 ## discord.py 
-```
+```js
 import discord
 from discord.ext import commands
 import asyncio 
@@ -29,16 +29,16 @@ async def motivation(ctx):
 bot.run('token') 
 ```
 ## discord.js
-```
+```js
 const { Client, MessageEmbed } = require('discord.js'); 
 const client = new Client();
-const PREFIX = 'prefix'
+const PREFIX = 'prefix';
 
 client.on('ready', () => console.log('Online!'));
 
 client.on('message', message => {
-  if(command === PREFIX+'motivation') {
-  const imgurl = 'https://raw.githubusercontent.com/AdibHoque/API/master/Motivation/%20${Math.floor(Math.random() * 106) + 1}.jpg`
+  if(message.content === PREFIX+'motivation') {
+  const imgurl = `https://raw.githubusercontent.com/AdibHoque/API/master/Motivation/%20${Math.floor(Math.random() * 106) + 1}.jpg`;
   const embed = new MessageEmbed()
   .setTitle('Motivation') 
   .setImage(imgurl)
