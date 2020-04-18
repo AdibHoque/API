@@ -5,7 +5,7 @@ If you want to use this simple api for your discord bot, generate a number betwe
 
 # EXAMPLEs
 ## discord.py 
-```js
+```py
 import discord
 from discord.ext import commands
 import asyncio 
